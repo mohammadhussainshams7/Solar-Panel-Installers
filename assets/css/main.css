@@ -420,6 +420,19 @@ main .repairs{
 
         
     }
+    .enargy .parent .icon{
+        width: 50px;
+        height: 50px;
+        background-color: hsl(165deg 36.36% 43.14%);
+        color: #e6dcdc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border: 6px solid #a4a4a4 ;
+
+    }
     .enargy .parent .card:first-child{
    /*      grid-column: 1 / span 2; */
         grid-row: 1 / span 2;
@@ -463,7 +476,40 @@ main .repairs{
 
   }
 
+/* Start Loader  */
 
+/* Loader styles */
+.load{
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center the loader */
+    align-items: center;     /* Vertically center the loader */
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.load .loader {
+    border: 8px solid #f3f3f3; /* Light gray background */
+    border-top: 8px solid #3498db; /* Blue color for the top */
+    border-radius: 50%;
+    width: 50px;  /* Size of the loader */
+    height: 50px; /* Size of the loader */
+    animation: spin 1s linear infinite; /* Infinite rotation */
+}
+
+/* Animation to make the loader spin */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* End Loader  */
 /* End enargy section */
 
 
@@ -479,6 +525,12 @@ main .repairs{
     font-size: 30px;
     color: hsl(165deg 36.36% 43.14%);
     margin: 10px auto;
+}
+.woc .ww{
+    font-size: 50px;
+    color: hsl(165deg 36.36% 43.14%);
+    text-align: right;
+    transform: rotate(182deg);
 }
 /* End out-value section */
 /* End woc section */
