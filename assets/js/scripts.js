@@ -14,3 +14,7 @@ humburger.addEventListener("click", function () {
     listMenu.classList.toggle("active");
 })
 
+        // When the page is fully loaded, hide the loader and show the content
+        window.onload = function() {
+            document.getElementById("loader").style.display = "none";
+        };
